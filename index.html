@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Eval3D: Interpretable and Fine-grained Evaluation for 3D Generation">
+  <meta name="description" content="Eval3D: Interpretable and Fine-grained Evaluation for 3D Generation">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eval3D: Interpretable and Fine-grained Evaluation for 3D Generation</title>
@@ -22,17 +22,30 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icon.jpg">
+  <style>
+    .container.is-max-desktop {
+      max-width: 800px !important;
+    }
+  </style>
+  <style>
+    /* Add the CSS from the artifact above */
+    .section {
+      padding-top: 0.0rem;
+      padding-bottom: 0.0rem;
+      margin: 0;
+    }
+  
+    /* etc. */
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -40,245 +53,250 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-</nav>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Eval3D: Interpretable and Fine-grained Evaluation for 3D Generation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="">Shivam Duggal*</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Yushi Hu*</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Oscar Michel</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Aniruddha Kembhavi</a>,
-            </span>
-            <span class="author-block">
-              <a href="">William T. Freeman</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Noah A. Smith</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Ranjay Krishna</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Antonio Torralba</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Ali Farhadi</a>,
-            </span>
-            <span class="author-block">
-              <a href="">Wei-Chiu Ma</a> 
-            </span>
-            
-          </div>
-
-        <div class="is-size-5 publication-authors">
-          <span class="author-block">
-            <b style="color:#bd2129; font-weight:normal">▶ </b>Massachusetts Institute of Technology
-          </span>
-          <span class="author-block">
-            <b style="color:#f68946; font-weight:normal">▶ </b>University of Washington
-          </span>
-          <span class="author-block">
-            <b style="color:#f68946; font-weight:normal">▶ </b>Allen Institute for AI
-          </span>
-          <span class="author-block">
-            <b style="color:#008AD7; font-weight:normal">▶ </b>NYU
-          </span>
-          <span class="author-block">
-            <b style="color:#e20a32; font-weight:normal">▶ </b>Cornell University
-          </span>
-          <span class="author-block">
-            &nbsp;&nbsp;<sup>*</sup>Equal Contribution
-          </span>
-        </div>
-
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
+            <h1 class="title is-1 publication-title">Eval3D: Interpretable and Fine-grained Evaluation for 3D Generation
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="">Shivam Duggal*</a>,
               </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
+              <span class="author-block">
+                <a href="">Yushi Hu*</a>,
               </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
+              <span class="author-block">
+                <a href="">Oscar Michel</a>,
               </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+              <span class="author-block">
+                <a href="">Aniruddha Kembhavi</a>,
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
+              <span class="author-block">
+                <a href="">William T. Freeman</a>,
+              </span>
+              <span class="author-block">
+                <a href="">Noah A. Smith</a>,
+              </span>
+              <span class="author-block">
+                <a href="">Ranjay Krishna</a>,
+              </span>
+              <span class="author-block">
+                <a href="">Antonio Torralba</a>,
+              </span>
+              <span class="author-block">
+                <a href="">Ali Farhadi</a>,
+              </span>
+              <span class="author-block">
+                <a href="">Wei-Chiu Ma</a>
+              </span>
+
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <b style="color:#bd2129; font-weight:normal">▶ </b>Massachusetts Institute of Technology
+              </span>
+              <span class="author-block">
+                <b style="color:#f68946; font-weight:normal">▶ </b>University of Washington
+              </span>
+              <span class="author-block">
+                <b style="color:#f68946; font-weight:normal">▶ </b>Allen Institute for AI
+              </span>
+              <span class="author-block">
+                <b style="color:#008AD7; font-weight:normal">▶ </b>NYU
+              </span>
+              <span class="author-block">
+                <b style="color:#e20a32; font-weight:normal">▶ </b>Cornell University
+              </span>
+              <span class="author-block">
+                &nbsp;&nbsp;<sup>*</sup>Equal Contribution
+              </span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
-<section class="section">
+  <section class="section">
 
-
-  <!-- Abstract -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Abstract</h2>
-      <div class="content has-text-justified">
-        <p>
-          Despite the unprecedented progress in the field of 3D generation, current systems still often fail to produce
-          high-quality 3D assets that are visually appealing and geometrically and semantically consistent across
-          multiple viewpoints. To effectively assess the quality of the generated 3D data, there is a need for a
-          reliable 3D evaluation tool. Unfortunately, existing 3D evaluation metrics often overlook the geometric
-          quality of generated assets or merely rely on black-box multimodal large language models for coarse
-          assessment. In this paper, we introduce Eval3D, a fine-grained, interpretable evaluation tool that can
-          faithfully evaluate the quality of generated 3D assets based on various distinct yet complementary criteria.
-          Our key observation is that many desired properties of 3D generation, such as semantic and geometric
-          consistency, can be effectively captured by measuring the consistency among various foundation models and
-          tools. We thus leverage a diverse set of models and tools as probes to evaluate the inconsistency of generated
-          3D assets across different aspects. Compared to prior work, Eval3D provides pixel-wise measurement, enables
-          accurate 3D spatial feedback, and aligns more closely with human judgments. We comprehensively evaluate
-          existing 3D generation models using Eval3D and highlight the limitations and challenges of current models.
-        </p>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Despite the unprecedented progress in the field of 3D generation, current systems still often fail to
+              produce
+              high-quality 3D assets that are visually appealing and geometrically and semantically consistent across
+              multiple viewpoints. To effectively assess the quality of the generated 3D data, there is a need for a
+              reliable 3D evaluation tool. Unfortunately, existing 3D evaluation metrics often overlook the geometric
+              quality of generated assets or merely rely on black-box multimodal large language models for coarse
+              assessment. In this paper, we introduce Eval3D, a fine-grained, interpretable evaluation tool that can
+              faithfully evaluate the quality of generated 3D assets based on various distinct yet complementary
+              criteria.
+              Our key observation is that many desired properties of 3D generation, such as semantic and geometric
+              consistency, can be effectively captured by measuring the consistency among various foundation models and
+              tools. We thus leverage a diverse set of models and tools as probes to evaluate the inconsistency of
+              generated
+              3D assets across different aspects. Compared to prior work, Eval3D provides pixel-wise measurement,
+              enables
+              accurate 3D spatial feedback, and aligns more closely with human judgments. We comprehensively evaluate
+              existing 3D generation models using Eval3D and highlight the limitations and challenges of current models.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!--/ Abstract -->
-  </div>
-</section>
+    </section>
 
 
 
-<section class="hero is-small" style="background-color: #f0faff;">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Challenges of 3D Generation</h2>
-      <img src="static/images/artifacts3.jpg">
-      <div class="content has-text-justified">
-        <ol>
-          <li><span style="color: purple;">Structural inconsistency</span>: lack of globally-coherent 3D shape;</li>
-          <li><span style="color: cyan;">Text-3D misalignment</span>: failure to meet the requirements of the input
-            text-prompt;
-          </li>
-          <li><span style="color: green;">Semantic i`nconsistency</span>: content change and incoherent semantics;</li>
-          <li><span style="color: red;">Geometric inconsistency</span>: misaligned geometry and texture.</li>
-        </ol>
+
+    <section class="hero is-small" style="background-color: #f0faff;">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Challenges of 3D Generation</h2>
+          <img src="static/images/artifacts3.jpg">
+          <div class="content has-text-justified">
+            <ol>
+              <li><span style="color: purple;">Structural inconsistency</span>: lack of globally-coherent 3D shape;</li>
+              <li><span style="color: cyan;">Text-3D misalignment</span>: failure to meet the requirements of the input
+                text-prompt;
+              </li>
+              <li><span style="color: green;">Semantic i`nconsistency</span>: content change and incoherent semantics;
+              </li>
+              <li><span style="color: red;">Geometric inconsistency</span>: misaligned geometry and texture.</li>
+            </ol>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<section class="section is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Overview of Eval3D</h2>
-      <figure class="image">
-        <img src="static/eval3d.gif" alt="Eval3D GIF">
-      </figure>
-      <div class="content has-text-justified">
-        Eval3D offers interpretable, fine-grained and human-aligned metrics to assess the quality of 3D generations from
-        various aspects. We utilize a diverse array of foundation models, measuring consistency among different
-        representations of 3D assets.
+    <section class="section is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Overview of Eval3D</h2>
+          <figure class="image">
+            <img src="static/eval3d.gif" alt="Eval3D GIF">
+          </figure>
+          <div class="content has-text-justified">
+            Eval3D offers interpretable, fine-grained and human-aligned metrics to assess the quality of 3D generations
+            from
+            various aspects. We utilize a diverse array of foundation models, measuring consistency among different
+            representations of 3D assets.
+          </div>
+
+        </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<section class="section is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Geometric Inconsistency</h2>
-      <img src="static/images/geometry-artifact3.jpg">
-      <div class="content has-text-justified">
-        Geometry inconsistency evaluates texture-geometry misalignment by comparing 3D rendered normal and image-based
-        normal.
-        Bright-yellow indicates large discrepancy.
+    <section class="section is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Geometric Inconsistency</h2>
+          <img src="static/images/geometry-artifact3.jpg">
+          <div class="content has-text-justified">
+            Geometry inconsistency evaluates texture-geometry misalignment by comparing 3D rendered normal and
+            image-based
+            normal.
+            Bright-yellow indicates large discrepancy.
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-<section class="section is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Structural Consistency</h2>
-      <img src="static/images/z123.jpg">
-      <div class="content has-text-justified">
-        Structural consistency evaluates the geometric coherence of the generated 3D assets by comparing rendered views
-        with
-        the predictions from a novel view synthesis model (Zero-123) across various rotations. We utilize DreamSim to
-        assess
-        image similarity.
+    <section class="section is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Structural Consistency</h2>
+          <img src="static/images/z123.jpg">
+          <div class="content has-text-justified">
+            Structural consistency evaluates the geometric coherence of the generated 3D assets by comparing rendered
+            views
+            with
+            the predictions from a novel view synthesis model (Zero-123) across various rotations. We utilize DreamSim
+            to
+            assess
+            image similarity.
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
-<!--     <section class="section is-light">
+    <!--     <section class="section is-light">
       <div class="hero-body">
         <div class="container is-max-desktop is-centered has-text-centered">
           <h2 class="title is-3">Semantic Inconsistency</h2>
@@ -294,128 +312,134 @@
     </section> -->
 
 
-<section class="section is-light">
-  <style>
-    .section_column {
-      flex: 0 0 30%;
-      /* Each column takes 30% of the row width */
-      margin: 0 1%;
-      /* Add 1% margin for white space */
-    }
+    <section class="section is-light">
+      <style>
+        .section_column {
+          flex: 0 0 30%;
+          /* Each column takes 30% of the row width */
+          margin: 0 1%;
+          /* Add 1% margin for white space */
+        }
 
-    .section_column img {
-      width: 100%;
-      /* Make sure GIFs scale to the column width */
-      height: auto;
-      /* Maintain aspect ratio */
-    }
+        .section_column img {
+          width: 100%;
+          /* Make sure GIFs scale to the column width */
+          height: auto;
+          /* Maintain aspect ratio */
+        }
 
-    .section_column p {
-      font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
-      /* Use Avenir with fallbacks */
-      text-align: justify;
-      /* Justify text left and right */
-      margin-top: 10px;
-      /* Add spacing above the text */
-      font-size: 14px;
-      /* Adjust font size as needed */
-    }
-  </style>
+        .section_column p {
+          font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+          /* Use Avenir with fallbacks */
+          text-align: justify;
+          /* Justify text left and right */
+          margin-top: 10px;
+          /* Add spacing above the text */
+          font-size: 14px;
+          /* Adjust font size as needed */
+        }
+      </style>
 
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Semantic Inconsistency</h2>
-      <img src="static/images/3d-inconsistency-map.jpg" alt="3D Inconsistency Map">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Semantic Inconsistency</h2>
+          <img src="static/images/3d-inconsistency-map.jpg" alt="3D Inconsistency Map">
 
-      <div class="content has-text-justified">
-        3D inconsistency maps: The proposed 3D metrics, semantic and geometric consistencies, allow fine-grained
-        localization
-        of the artifacts (e.g., Janus issue: multiple nose/face, inconsistent hand geometry, arbitrary surface patterns
-        on the
-        back) by fusing/computing the metrics in 3D space.
-      </div>
-      <br />
+          <div class="content has-text-justified">
+            3D inconsistency maps: The proposed 3D metrics, semantic and geometric consistencies, allow fine-grained
+            localization
+            of the artifacts (e.g., Janus issue: multiple nose/face, inconsistent hand geometry, arbitrary surface
+            patterns
+            on the
+            back) by fusing/computing the metrics in 3D space.
+          </div>
+          <br />
 
-      <div class="columns is-centered">
-        <div class="section_column">
-          <img src="static/semantic_inconsistency_1.gif" alt="Semantic Inconsistency 1">
-          <p>As we toggle the texture on and off, pay close attention to how the hand appears in the geometry. When the
-            texture is off, it looks as if the dog is holding the phone with two hands. However, when the texture is
-            turned on, it seems that only one hand is holding the phone while the other rests on the ground.
-            <strong><span style="color: red; ">See how Eval3D Semantic Consistency beautifully highlights this
-                observation above.</span></strong></p>
-        </div>
-        <div class="section_column">
-          <img src="static/semantic_inconsistency_2.gif" alt="Semantic Inconsistency 2">
-          <p>As we move around the camera to focus on different viewpoints of the geometry, the Jannus issue on the dog
-            nose becomes evident. <strong><span style="color: red; ">Eval3D detects it again, see the dog nose
-                highlighted in cyan in the figure above!</span></strong></p>
-        </div>
-        <div class="section_column">
-          <img src="static/semantic_inconsistency_3.gif" alt="Semantic Inconsistency 3">
-          <p>Notice the abrupt geometric patterns on the dog’s back, which even create the illusion of a strange arm.
-            <strong><span style="color: red;">Eval3D Semantic Consistency, being 3D-aware, detects this
-                effectively!</span></strong> The inconsistent or abrupt geometry causes the projections of 3D points
-            onto the rendered image's DINO featuresto become noisy, resulting in a high standard deviation in the
-            aggregated DINO features for these 3D points.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3">Will Eval3D Semantic Consistency be high for GT Objects?</h2>
-
-      <!-- First row of GIFs -->
-      <div class="columns is-centered is-variable is-5">
-        <div class="column">
-          <figure class="image">
-            <img src="static/dino_vis_1.gif" alt="DINO Visualization 1">
-          </figure>
-        </div>
-        <div class="column">
-          <figure class="image">
-            <img src="static/dino_vis_2.gif" alt="DINO Visualization 2">
-          </figure>
+          <div class="columns is-centered">
+            <div class="section_column">
+              <img src="static/semantic_inconsistency_1.gif" alt="Semantic Inconsistency 1">
+              <p>As we toggle the texture on and off, pay close attention to how the hand appears in the geometry. When
+                the
+                texture is off, it looks as if the dog is holding the phone with two hands. However, when the texture is
+                turned on, it seems that only one hand is holding the phone while the other rests on the ground.
+                <strong><span style="color: red; ">See how Eval3D Semantic Consistency beautifully highlights this
+                    observation above.</span></strong>
+              </p>
+            </div>
+            <div class="section_column">
+              <img src="static/semantic_inconsistency_2.gif" alt="Semantic Inconsistency 2">
+              <p>As we move around the camera to focus on different viewpoints of the geometry, the Jannus issue on the
+                dog
+                nose becomes evident. <strong><span style="color: red; ">Eval3D detects it again, see the dog nose
+                    highlighted in cyan in the figure above!</span></strong></p>
+            </div>
+            <div class="section_column">
+              <img src="static/semantic_inconsistency_3.gif" alt="Semantic Inconsistency 3">
+              <p>Notice the abrupt geometric patterns on the dog’s back, which even create the illusion of a strange
+                arm.
+                <strong><span style="color: red;">Eval3D Semantic Consistency, being 3D-aware, detects this
+                    effectively!</span></strong> The inconsistent or abrupt geometry causes the projections of 3D points
+                onto the rendered image's DINO featuresto become noisy, resulting in a high standard deviation in the
+                aggregated DINO features for these 3D points.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Second row of GIFs -->
-      <div class="columns is-centered is-variable is-5">
-        <div class="column">
-          <figure class="image">
-            <img src="static/dino_vis_3.gif" alt="DINO Visualization 3">
-          </figure>
-        </div>
-        <div class="column">
-          <figure class="image">
-            <img src="static/dino_vis_4.gif" alt="DINO Visualization 4">
-          </figure>
+    <section class="section is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3">Will Eval3D Semantic Consistency be high for GT Objects?</h2>
+
+          <!-- First row of GIFs -->
+          <div class="columns is-centered is-variable is-5">
+            <div class="column">
+              <figure class="image">
+                <img src="static/dino_vis_1.gif" alt="DINO Visualization 1" style="max-width: 70%; display: block; margin: 0 auto;">
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="static/dino_vis_2.gif" alt="DINO Visualization 2" style="max-width: 70%; display: block; margin: 0 auto;">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Second row of GIFs -->
+          <div class="columns is-centered is-variable is-5">
+            <div class="column">
+              <figure class="image">
+                <img src="static/dino_vis_3.gif" alt="DINO Visualization 3" style="max-width: 70%; display: block; margin: 0 auto;">
+              </figure>
+            </div>
+            <div class="column">
+              <figure class="image">
+                <img src="static/dino_vis_4.gif" alt="DINO Visualization 4" style="max-width: 70%; display: block; margin: 0 auto;">
+              </figure>
+            </div>
+          </div>
+
+          <!-- Caption below GIFs -->
+          <div class="content has-text-centered">
+            <p><span style="color: red;">Check the high consistency of DINO features for Ground-Truth (GT) Objaverse
+                objects.</span></p>
+          </div>
         </div>
       </div>
-
-      <!-- Caption below GIFs -->
-      <div class="content has-text-centered">
-        <p><span style="color: red;">Check the high consistency of DINO features for Ground-Truth (GT) Objaverse
-            objects.</span></p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
 
-<section class="section is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop is-centered has-text-centered">
-      <h2 class="title is-3"><strong><span style="color: red;">Eval3D All in One Benchmark </span></strong> <br>
-        Structutal, Semantic, Geometric, Text-3D Alignement, Aethetcis</h2>
-      <img src="static/images/exp_001.png">
-      <!-- <div class="content has-text-justified">
+    <section class="section is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop is-centered has-text-centered">
+          <h2 class="title is-3"><strong><span style="color: red;">Eval3D All in One Benchmark </span></strong> <br>
+            Structutal, Semantic, Geometric, Text-3D Alignement, Aethetcis</h2>
+          <img src="static/images/exp_001.png" style="max-width: 70%; display: block; margin: 0 auto;">
+          <!-- <div class="content has-text-justified">
             <strong>Evaluation examples from Eval3D.</strong> While the generation from MV-Dream appears visually appealing at
             first
             glance, we can identify a missing boat and paddle
@@ -423,48 +447,48 @@
             the panda
             (reflected in <span style="color: red;">geometric consistency</span>).
           </div> -->
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
 
 
 
-<footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
         <div class="content has-text-centered">
-            <!-- TODO: UPDATE -->
-            <a class="icon-link" href="" target="_blank">
-                <i class="ai ai-arxiv"></i>
-            </a>
-            &nbsp;
-            <!-- TODO: UPDATE -->
-            <a class="icon-link" href="" target="_blank">
-                <i class="fas fa-file-pdf"></i>
-            </a>
-            <!-- &nbsp;
+          <!-- TODO: UPDATE -->
+          <a class="icon-link" href="" target="_blank">
+            <i class="ai ai-arxiv"></i>
+          </a>
+          &nbsp;
+          <!-- TODO: UPDATE -->
+          <a class="icon-link" href="" target="_blank">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <!-- &nbsp;
             <a class="icon-link" href="https://youtu.be/1hYtGZ0CUSA" target="_blank">
                 <i class="fab fa-youtube"></i>
             </a> -->
-            <!-- &nbsp;
+          <!-- &nbsp;
             <a class="icon-link" href="./static/docs/InternetExplorer.pptx" target="_blank">
                 <i class="fas fa-file-powerpoint"></i>
             </a> -->
-            &nbsp;
-            <a class="icon-link" href=""
-                target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+          &nbsp;
+          <a class="icon-link" href="" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
         <div class="columns is-centered">
-            <div class="content">
-                <p>
-                    Page source code was adapted from
-                    <a href="https://nerfies.github.io" target="_blank">here</a>
-                </p>
-            </div>
+          <div class="content">
+            <p>
+              Page source code was adapted from
+              <a href="https://nerfies.github.io" target="_blank">here</a>
+            </p>
+          </div>
         </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
